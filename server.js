@@ -1,6 +1,6 @@
 import express from 'express';
 import connectDatabase from './config/db';
-import {check, validationResult} from 'express-validator';
+import {body, check, validationResult} from 'express-validator';
 import cors from 'cors';
 
 const app = express();
