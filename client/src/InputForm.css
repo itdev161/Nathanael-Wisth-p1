@@ -35,3 +35,13 @@ input:focus {
     background-color: #4f4f4f;
     cursor: pointer;
 }
+
+#response {
+    white-space: pre-wrap;
+    background-color: #cccccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 2vmin auto;
+    width: calc(100px + 15vmin);
+    overflow-wrap: break-word;
+}
