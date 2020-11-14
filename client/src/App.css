@@ -4,15 +4,25 @@
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #82eb79;
+  height: 100vmin;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color:#00773c;
+  text-shadow: 2px 2px 2px #82eb79;
+  width: calc(100px + 15vmin);
   border-radius: 5px;
   min-height: 10vh;
   display: flex;
@@ -21,14 +31,22 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  margin: 2vmin;
-  box-shadow: 0px 0px 5px 5px #282c34;
+  margin: 1vmin;
 }
 
-.App-link {
-  color: #61dafb;
+.Card-header {
+    background-color:#00773c;
+    border-radius: 5px;
+    font-size: calc(10px + 2vmin);
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-#author {
-  font-size: calc(10px + 0.5vmin);
+.Card {
+    max-width: 60vmin;
+    background-color: #00cc00;
+    color: white;
+    border-radius: 5px;
+    margin: 1vmin;
 }

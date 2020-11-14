@@ -1,0 +1,21 @@
+#headerlinks{
+    padding: 20px;
+}
+
+#headerlinks li{
+    display: inline;
+    margin: 5px 1vmin;
+}
+
+#headerlinks p{
+    display: inline;
+}
+
+.res-separator {
+    margin-bottom: 4vmin;
+}
+
+.res-text-left {
+    margin: 1vmin;
+    text-align: left;
+}

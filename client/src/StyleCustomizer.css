@@ -1,0 +1,13 @@
+#customizer{
+    display: flex;
+    margin: 10px;
+}
+
+#customizer-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+#customizer-buttons button{
+    margin: 5px;
+}

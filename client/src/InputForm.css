@@ -3,21 +3,17 @@
     display: flex;
     flex-direction: column;
     justify-items: center;
-    width: calc(100px + 15vmin);
-    margin: 2vmin auto;
-    background-color: #cccccc;
-    padding: 20px;
-    border-radius: 5px;
 }
 
 input {
     margin: 15px;
     border: none;
     border-radius: 5px;
+    margin: 2vmin auto;
 }
 
 input:focus {
-    box-shadow: 0px 0px 3px 3px #282c34;
+    box-shadow: 0px 0px 3px 3px #00773c;
     outline: none;
 }
 
@@ -38,8 +34,8 @@ input:focus {
 
 #response {
     white-space: pre-wrap;
-    background-color: #cccccc;
-    border-radius: 5px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #00773c;
     padding: 20px;
     margin: 2vmin auto;
     width: calc(100px + 15vmin);
