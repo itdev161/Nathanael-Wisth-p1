@@ -15,36 +15,30 @@ export default class StyleCustomizer extends React.Component{
     }
 
     handleChangeBG = () => {
-        this.setState({background: this.state.picked}, this.changeBG);
-    }
-
-    changeBG = () => {
-        var cards = Array.from(document.getElementsByClassName("App") as HTMLCollectionOf<HTMLElement>);
-        for(var i=0; i<cards.length; i++){
-            cards[i].style.backgroundColor = this.state.background;
-        }
+        this.setState({background: this.state.picked}, () => {
+            var cards = Array.from(document.getElementsByClassName("App") as HTMLCollectionOf<HTMLElement>);
+            for(var i=0; i<cards.length; i++){
+                cards[i].style.backgroundColor = this.state.background;
+            }
+        });
     }
 
     handleChangePrim = () => {
-        this.setState({primary: this.state.picked}, this.changePrim);
-    }
-
-    changePrim = () => {
-        var cards = Array.from(document.getElementsByClassName("Card") as HTMLCollectionOf<HTMLElement>);
-        for(var i=0; i<cards.length; i++){
-            cards[i].style.backgroundColor = this.state.primary;
-        }
+        this.setState({primary: this.state.picked}, () => {
+            var cards = Array.from(document.getElementsByClassName("Card") as HTMLCollectionOf<HTMLElement>);
+            for(var i=0; i<cards.length; i++){
+                cards[i].style.backgroundColor = this.state.primary;
+            }
+        });
     }
 
     handleChangeTitle = () => {
-        this.setState({dark: this.state.picked}, this.changeTitle);
-    }
-
-    changeTitle = () => {
-        var cards = Array.from(document.getElementsByClassName("Card-header") as HTMLCollectionOf<HTMLElement>);
-        for(var i=0; i<cards.length; i++){
-            cards[i].style.backgroundColor = this.state.dark;
-        }
+        this.setState({dark: this.state.picked}, () => {
+            var cards = Array.from(document.getElementsByClassName("Card-header") as HTMLCollectionOf<HTMLElement>);
+            for(var i=0; i<cards.length; i++){
+                cards[i].style.backgroundColor = this.state.dark;
+            }
+        });
     }
 
     changeToDefault = () => {
@@ -53,22 +47,20 @@ export default class StyleCustomizer extends React.Component{
             background: '#82eb79',
             primary: '#00cc00',
             dark: '#00773c'
-        }, this.setDefault);
-    }
-
-    setDefault = () => {
-        var cards = Array.from(document.getElementsByClassName("App") as HTMLCollectionOf<HTMLElement>);
-        for(var i=0; i<cards.length; i++){
-            cards[i].style.backgroundColor = this.state.background;
-        }
-        cards = Array.from(document.getElementsByClassName("Card") as HTMLCollectionOf<HTMLElement>);
-        for(var i=0; i<cards.length; i++){
-            cards[i].style.backgroundColor = this.state.primary;
-        }
-        cards = Array.from(document.getElementsByClassName("Card-header") as HTMLCollectionOf<HTMLElement>);
-        for(var i=0; i<cards.length; i++){
-            cards[i].style.backgroundColor = this.state.dark;
-        }
+        }, () => {
+            var cards = Array.from(document.getElementsByClassName("App") as HTMLCollectionOf<HTMLElement>);
+            for(var i=0; i<cards.length; i++){
+                cards[i].style.backgroundColor = this.state.background;
+            }
+            cards = Array.from(document.getElementsByClassName("Card") as HTMLCollectionOf<HTMLElement>);
+            for(var i=0; i<cards.length; i++){
+                cards[i].style.backgroundColor = this.state.primary;
+            }
+            cards = Array.from(document.getElementsByClassName("Card-header") as HTMLCollectionOf<HTMLElement>);
+            for(var i=0; i<cards.length; i++){
+                cards[i].style.backgroundColor = this.state.dark;
+            }
+        });
     }
 
     render(){
