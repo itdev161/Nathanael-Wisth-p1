@@ -16,7 +16,7 @@ export default class StyleCustomizer extends React.Component{
 
     handleChangeBG = () => {
         this.setState({background: this.state.picked}, () => {
-            var cards = Array.from(document.getElementsByClassName("App") as HTMLCollectionOf<HTMLElement>);
+            var cards = Array.from(document.getElementsByTagName("body") as HTMLCollectionOf<HTMLElement>);
             for(var i=0; i<cards.length; i++){
                 cards[i].style.backgroundColor = this.state.background;
             }
@@ -48,7 +48,7 @@ export default class StyleCustomizer extends React.Component{
             primary: '#00cc00',
             dark: '#00773c'
         }, () => {
-            var cards = Array.from(document.getElementsByClassName("App") as HTMLCollectionOf<HTMLElement>);
+            var cards = Array.from(document.getElementsByTagName("body") as HTMLCollectionOf<HTMLElement>);
             for(var i=0; i<cards.length; i++){
                 cards[i].style.backgroundColor = this.state.background;
             }
@@ -73,10 +73,10 @@ export default class StyleCustomizer extends React.Component{
                         onChangeComplete={this.handlePicked}
                     />
                     <div id="customizer-buttons">
-                        <button onClick={this.handleChangeBG}>Change Background</button>
-                        <button onClick={this.handleChangePrim}>Change Primary Color</button>
-                        <button onClick={this.handleChangeTitle}>Change Header Color</button>
-                        <button onClick={this.changeToDefault}>Revert To Default</button>
+                        <button onClick={this.handleChangeBG} className="buttons">Change Background</button>
+                        <button onClick={this.handleChangePrim} className="buttons">Change Primary Color</button>
+                        <button onClick={this.handleChangeTitle} className="buttons">Change Header Color</button>
+                        <button onClick={this.changeToDefault} className="buttons">Revert To Default</button>
                     </div>
                 </div>
             </div>

@@ -17,21 +17,6 @@ input:focus {
     outline: none;
 }
 
-#submit {
-    width: 100px;
-    text-align: center;
-    background-color:#282c34;
-    border-radius: 5px;
-    color: white;
-    margin: 1vmin auto;
-    padding: 1vmin;
-}
-
-#submit:hover {
-    background-color: #4f4f4f;
-    cursor: pointer;
-}
-
 #response {
     white-space: pre-wrap;
     font-weight: bold;

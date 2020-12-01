@@ -13,7 +13,7 @@ export default class InputForm extends React.Component<{}, AppState> {
         username: "",
         email: "",
         password: "",
-        response: "RESPONSE:"
+        response: ""
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -52,7 +52,7 @@ export default class InputForm extends React.Component<{}, AppState> {
             <input type="text" value={this.state.username} onChange={this.handleChange} placeholder="username" id="username" name="username"></input>
             <input type="text" value={this.state.email} onChange={this.handleChange} placeholder="email" id="email" name="email"></input>
             <input type="password" value={this.state.password} onChange={this.handleChange} placeholder="password" id="password" name="password" ></input>
-            <input type="submit" value="Submit" id="submit"/>
+            <input type="submit" value="Submit" id="submit" className="buttons"/>
             </form>
             <p id="response">{this.state.response}</p>
         </div>

@@ -7,9 +7,9 @@ function Resume(props){
         <div className="Card">
             <header className="Card-header">Nathanael Wisth</header>
             <ul id="headerlinks">
-                <li><a href="mailto:nategonepro@gmail.com">nategonepro@gmail.com</a></li>
+                <li><button className="buttons"><a href="mailto:nategonepro@gmail.com">nategonepro@gmail.com</a></button></li>
                 <p>|</p>
-                <li><a href="https://www.linkedin.com/in/nathanael-wisth/">LinkedIn</a></li>
+                <li><button className="buttons"><a href="https://www.linkedin.com/in/nathanael-wisth/">LinkedIn</a></button></li>
             </ul>
             <div className="res-section">
                 <p className="res-separator">

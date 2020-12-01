@@ -5,6 +5,8 @@ import axios from 'axios';
 import InputForm from './InputForm';
 import Resume from './Resume';
 import StyleCustomizer from './StyleCustomizer';
+import BFInterpreter from './BFInterpreter';
+import GitList from './GitList';
 
 class  App extends React.Component {
   state = {
@@ -26,16 +28,30 @@ class  App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div className="column">
-          <Resume />
+        <div className="desktop">
+          <div className="column">
+            <Resume />
+          </div>
+          <div className="column">
+            <header className="App-header">
+            NateGonePro
+            </header>
+            <InputForm />
+            <GitList />
+          </div>
+          <div className="column">
+            <StyleCustomizer />
+            <BFInterpreter />
+          </div>
         </div>
-        <div className="column">
+        <div className="mobile">
           <header className="App-header">
-          NateGonePro
+            NateGonePro
           </header>
           <InputForm />
-        </div>
-        <div className="column">
+          <Resume />
+          <GitList />
+          <BFInterpreter />
           <StyleCustomizer />
         </div>
       </div>

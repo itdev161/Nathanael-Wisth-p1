@@ -1,0 +1,34 @@
+#bf-input {
+    margin: 5px;
+}
+
+#bf-output {
+    background-color: #ddd;
+    margin: 5px;
+    border-radius: 5px;
+    color: #333;
+}
+
+#bf-output h3 {
+    background-color: #bbb;
+    border-radius: 5px;
+}
+
+#bf-int {
+    display: flex;
+}
+
+#bf-inputoutput {
+    display: flex;
+    flex-direction: column;
+}
+
+#bf-buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+#bf-buttons button {
+    margin: 5px;
+}
